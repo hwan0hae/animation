@@ -10,6 +10,7 @@ import PathBox from "./components/motionBox/PathBox";
 import ScrollBox from "./components/motionBox/ScrollBox";
 import SlideBox from "./components/motionBox/SlideBox";
 import VariantsBox from "./components/motionBox/VariantsBox";
+import { Helmet } from "react-helmet-async";
 
 import {
   Container,
@@ -29,6 +30,9 @@ function App() {
   };
   return (
     <Wrapper>
+      <Helmet>
+        <title>Animaiton</title>
+      </Helmet>
       <Container>
         {/* Animation */}
         <AnimationBox onClickRefresh={onClickRefresh} refresh={refresh} />
